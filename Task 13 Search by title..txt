@@ -1,0 +1,13 @@
+async function getBookByTitle (title){
+try {
+const resp = await axios({
+method: 'get,
+url: "https://tommylee62-5000.theiadocker-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/isbn/"+ title,
+responseType: 'json'
+})
+return resp;
+}
+catch(e) {
+console.log(e);
+}
+}

@@ -1,0 +1,13 @@
+async function getBookByAuthor (author){
+try {
+const resp = await axios({
+method: 'get',
+url: "https://tommylee62-5000.theiadocker-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/author/"+ author,
+responseType: 'json'
+})
+return resp;
+}
+catch(e) 
+console.log(e);
+}
+}
